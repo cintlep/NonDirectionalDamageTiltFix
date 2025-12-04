@@ -1,0 +1,26 @@
+{
+	"schemaVersion": 1,
+	"id": "nondirectionaldamagetiltfix",
+	"version": "${version}",
+	"name": "Non-Directional Damage Tilt Fix",
+	"description": "Fixes MC-259212, damage tilt will now properly handle directional & non-directional sources.",
+	"authors": [
+		"cintlex"
+	],
+	"license": "LGPL 3.0 Only",
+	"icon": "assets/nddtf/icon.png",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"cintlex.nddtf.NonDirectionalDamageTiltFix"
+		]
+	},
+	"mixins": [
+		"nddtf.mixins.json"
+	],
+	"depends": {
+		"fabricloader": "*",
+		"minecraft": ">=1.20.1",
+		"java": ">=17"
+	}
+}
