@@ -14,7 +14,7 @@ import org.spongepowered.asm.mixin.injection.At;
 @Mixin(GameRenderer.class)
 public class bobHurts {
     @Shadow @Final
-    private Minecraft minecraft;
+    Minecraft minecraft;
     @Unique
     private DamageSource damagetiltfixes$ds = null;
     @Unique
