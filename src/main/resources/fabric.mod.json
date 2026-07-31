@@ -2,25 +2,29 @@
 	"schemaVersion": 1,
 	"id": "nondirectionaldamagetiltfix",
 	"version": "${version}",
-	"name": "Non-Directional Damage Tilt Fix",
-	"description": "Fixes MC-259212, damage tilt will now properly handle directional & non-directional sources.",
+	"name": "Nondirectional Damage Tilt Fix",
+	"description": "Restores a missing check in modern damage tilt code for indirect sources of damage. Fixes MC-259212",
 	"authors": [
 		"cintlex"
 	],
+	"contact": {
+		"issues": "https://github.com/cintlep/NonDirectionalDamageTiltFix/issues",
+		"sources": "https://github.com/cintlep/NonDirectionalDamageTiltFix"
+	},
 	"license": "LGPL 3.0 Only",
-	"icon": "assets/nddtf/icon.png",
+	"icon": "assets/nondirectionaldamagetiltfix/icon.png",
 	"environment": "client",
 	"entrypoints": {
 		"client": [
-			"cintlex.nddtf.NonDirectionalDamageTiltFix"
+			"cintlex.nondirectionaldamagetiltfix.NondirectionalDamageTiltFix"
 		]
 	},
 	"mixins": [
-		"nddtf.mixins.json"
+		"nondirectionaldamagetiltfix.mixins.json"
 	],
 	"depends": {
-		"fabricloader": "*",
-		"minecraft": ">=1.20.1 <1.21.2",
-		"java": ">=17"
+		"fabricloader": ">=0.17.0",
+		"minecraft": ">=26.1",
+		"java": ">=25"
 	}
 }
